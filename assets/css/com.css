@@ -1,12 +1,15 @@
 :root {
-  --bg: #0b0b10;
-  --surface: #15151c;
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #f5f5f7;
-  --muted: #a1a1aa;
-  --accent: #ffb020;
-  --cta: #ff6a1a;
-  --cta-hover: #ff7f3a;
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --border: #ece7df;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --tag-bg: #e8effd;
+  --mark: #fde68a;
+  --hint-bg: #f1eee8;
+  --cta: #16a34a;
+  --cta-hover: #15803d;
 }
 
 *,
@@ -23,15 +26,11 @@ body {
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 176, 32, 0.12), transparent 70%),
-    var(--bg);
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -40,37 +39,55 @@ body {
 }
 
 .page {
-  flex: 1;
   width: 100%;
   max-width: 820px;
   margin: 0 auto;
-  padding: 40px 16px 32px;
+  padding: 32px 16px 48px;
   text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .headline {
   margin: 0 0 14px;
   font-size: clamp(24px, 4.6vw, 36px);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: -0.02em;
 }
 
+/* Grifo de marca-texto */
 .accent {
-  color: var(--accent);
+  padding: 0 2px;
+  background: linear-gradient(transparent 58%, var(--mark) 58%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .subheadline {
   margin: 0 0 20px;
-  color: #d4d4d8;
+  color: var(--muted);
   font-size: clamp(16px, 2.8vw, 19px);
   font-weight: 500;
 }
 
 .hint {
+  display: inline-block;
   margin: 0 0 16px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--hint-bg);
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .video {
@@ -78,7 +95,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--surface);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
 }
 
 .cta {
@@ -96,7 +113,7 @@ body {
   font-weight: 800;
   letter-spacing: 0.01em;
   text-decoration: none;
-  box-shadow: 0 10px 30px rgba(255, 106, 26, 0.35);
+  box-shadow: 0 8px 24px rgba(22, 163, 74, 0.25);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
