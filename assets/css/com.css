@@ -119,18 +119,3 @@ body {
   color: var(--muted);
   font-size: 14px;
 }
-
-.footer {
-  padding: 24px 16px;
-  color: var(--muted);
-  font-size: 13px;
-  text-align: center;
-}
-
-.footer a {
-  color: inherit;
-}
-
-.footer span {
-  margin: 0 8px;
-}
