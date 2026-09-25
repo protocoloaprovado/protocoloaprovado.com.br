@@ -48,21 +48,8 @@ body {
   text-align: center;
 }
 
-.brand {
-  display: inline-block;
-  padding: 6px 14px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .headline {
-  margin: 20px 0 14px;
+  margin: 0 0 14px;
   font-size: clamp(24px, 4.6vw, 36px);
   font-weight: 800;
   line-height: 1.2;
