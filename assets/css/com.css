@@ -6,7 +6,7 @@
   --muted: #6b7280;
   --accent: #2563eb;
   --tag-bg: #e8effd;
-  --mark: #fde68a;
+  --highlight: #ea580c;
   --hint-bg: #f1eee8;
   --cta: #16a34a;
   --cta-hover: #15803d;
@@ -65,12 +65,8 @@ body {
   letter-spacing: -0.02em;
 }
 
-/* Grifo de marca-texto */
 .accent {
-  padding: 0 2px;
-  background: linear-gradient(transparent 58%, var(--mark) 58%);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  color: var(--highlight);
 }
 
 .subheadline {
